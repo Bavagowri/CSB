@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import emailjs from 'emailjs-com';
 import './CustomProposal.css';
 
 const CustomProposal = ({ submitForm, layout }) => {
