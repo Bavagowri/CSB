@@ -22,9 +22,9 @@ function Header() {
           <Link to={'/custom-proposal'} className="header-button">
             Custom Proposal
           </Link>
-          <Link to={'/custom-proposal'} className="header-btn1">
+          {/* <Link to={'/custom-proposal'} className="header-btn1">
             Become a Speaker
-          </Link>
+          </Link> */}
         </nav>
       </div>
     </header>
