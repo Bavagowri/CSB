@@ -1,0 +1,31 @@
+[
+  {
+    "id": 1,
+    "name": "Dr. Jane Smith",
+    "occupation": "Former CEO of CVS Health; Corporate Board Director; Author",
+    "description": "Expert in artificial intelligence with over 20 years of experience in machine learning.",
+    "category": "Technology",
+    "subcategory": "Artificial Intelligence",
+    "imageUrl":"../src/assets/speakers/1.png"
+  },
+
+  {
+    "id": 2,
+    "name": "John Doe",
+    "occupation": "Former CEO of CVS Health; Corporate Board Director; Author",
+    "description": "Renowned motivational speaker focusing on leadership and personal growth.",
+    "category": "Motivational",
+    "subcategory": "Leadership",
+   "imageUrl":"../src/assets/speakers/2.png"
+  },
+
+  {
+    "id": 3,
+    "name": "Emily Johnson",
+    "occupation": "Former CEO of CVS Health; Corporate Board Director; Author",
+    "description": "Sustainability advocate with expertise in renewable energy solutions.",
+    "category": "Environment",
+    "subcategory": null,
+    "imageUrl":"../src/assets/speakers/3.png"
+  }
+]

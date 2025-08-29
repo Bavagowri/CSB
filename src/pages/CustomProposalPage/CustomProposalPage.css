@@ -1,0 +1,86 @@
+.cp-pg-container {
+  background-color: #ffffff;
+  padding: 120px 20px; /* Offset for fixed header */
+  min-height: calc(100vh - 60px); /* Ensure full height minus header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-us-pg-container {
+  margin-top: 30px; /* Offset for fixed header */
+  max-width: 800px; /* Match example width */
+  padding: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.contact-text {
+  text-align: left; /* Align text left within the container, centered overall */
+}
+
+.contact-title {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.contact-us-pg-text {
+  font-size: 1rem;
+  color: #333; /* Darker text to match example */
+  line-height: 1.6;
+  margin-bottom: 1rem;
+  max-width: 100%;
+}
+
+.bold-text {
+  font-weight: 700; /* Stronger bold to match example */
+  color: #eb1511; /* Reddish color for emphasis */
+}
+
+.contact-us-pg-text a {
+  color: #2563eb;
+  text-decoration: none;
+}
+
+.contact-us-pg-text a:hover {
+  text-decoration: underline;
+}
+
+.contact-form-section {
+  max-width: 800px;
+  width: 100%;
+  padding: 2rem;
+  border-radius: 8px;
+}
+
+.contact-form-placeholder {
+  margin-top: 0;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .cp-pg-container {
+    margin-top: 100px; /* Reduce margin on mobile */
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .contact-title {
+    font-size: 1.5rem;
+  }
+
+  .contact-us-pg-text {
+    font-size: 0.9rem;
+  }
+
+  .contact-form-section {
+    padding: 1rem;
+    max-width: 100%;
+  }
+
+  .contact-form-title {
+    font-size: 1.2rem;
+  }
+}

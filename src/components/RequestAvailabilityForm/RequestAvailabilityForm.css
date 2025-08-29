@@ -1,0 +1,190 @@
+/* Common styles */
+.request-availability-form-container {
+  background-color: #fffdfa5e;
+  padding: 10px 0; /* Add padding to create space around the form */
+  position: relative; /* Create positioning context for the form */
+  overflow:visible;
+  margin-bottom: 20px;
+}
+.ra-form-container {
+  width: 100%;
+  max-width: 90%;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(84, 39, 2, 0.664);
+  border-radius: 4px;
+  background-color: white;
+  /* margin: 20px 0; */
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  font-family: 'Kanit', sans-serif;
+  justify-content: center;
+  align-items: center;
+  margin-left: 3%;
+  /* margin-right: 5%; */
+}
+.heading {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.two-col {
+    display: flexbox;
+    /* flex-direction: column; */
+}
+.ra-form-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.ra-form-container form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+  font-family: 'Kanit', sans-serif;
+}
+
+.ra-form-container form div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.ra-form-container form div label {
+  margin-bottom: 5px;
+}
+
+.ra-form-container form div input,
+.ra-form-container form div select,
+.ra-form-container form div textarea {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%%;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.ra-form-container form span {
+  color: red;
+  font-size: 0.8em;
+  font-family: 'Kanit', sans-serif;
+
+}
+
+.ra-form-container button {
+  padding: 10px 20px;
+  background-color: #001F3F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  width: 40%;
+  margin-top: 10px;
+  margin-left: 30%;
+}
+
+button:hover {
+  background-color: #FFD717;
+}
+
+/* Horizontal layout */
+.horizontal-form {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.horizontal-form div {
+  flex: 1;
+  min-width: 150px; /* Adjust as needed */
+}
+
+.horizontal-form div input,
+.horizontal-form div select,
+.horizontal-form div textarea,
+.horizontal-form button {
+  height: 40px; /* Same height for all fields and button */
+  width: 80%;
+}
+
+.horizontal-form div textarea {
+  height: 40px; /* Same as input height */
+  resize: none;
+  width: 400px;
+
+}
+
+.horizontal-form div:last-child {
+  flex: none;
+  width: auto;
+}
+
+
+
+/* Vertical layout */
+.vertical-form {
+  flex-direction: column;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: darkorange;
+}
+@media screen and (max-width: 960px) {
+  .horizontal-form {
+    flex-direction: column;
+  }
+  .horizontal-form div {
+    flex: 1;
+    min-width: 100%; /* Adjust as needed */
+  }
+  
+  .horizontal-form div input,
+  .horizontal-form div select,
+  .horizontal-form div textarea,
+  .horizontal-form button {
+    height: 40px; /* Same height for all fields and button */
+    width: 100%;
+  }
+  
+  .horizontal-form div textarea {
+    height: 40px; /* Same as input height */
+    resize: none;
+    width: 100%;
+  
+  }
+}
+.ra-terms p{
+  margin-top: 10px;
+  text-align: center;
+  justify-content: center;
+  color: #888888;
+}

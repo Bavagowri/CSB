@@ -1,0 +1,117 @@
+.speaker-page {
+  background-color: #f9f9f9;
+  padding: 60px 20px; /* Offset for fixed header */
+  min-height: calc(100vh - 60px); /* Ensure full height minus header */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.speaker-pg-details {
+  display: flex;
+  align-items:flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem; /* Offset for fixed header */
+  padding: 2rem;
+  text-align: center;
+}
+
+.speaker-pg-image {
+  width: 50%;
+  height: 100%;
+  object-fit: cover;
+  margin-right: 30px;
+  border-radius: 0;
+}
+
+.speaker-pg-info {
+  flex: 1;
+  text-align: left;
+}
+
+.speaker-pg-name {
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.speaker-pg-description {
+  font-size: 1.1rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.speaker-pg-title {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+}
+
+.speaker-pg-fee {
+  font-size: 1rem;
+  color: #2c3e50;
+  margin: 0;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+.ra-btn{
+  margin-top: 2rem;
+  align-items: flex-start;
+  margin-bottom: 3rem;
+}
+.request-availability-btn {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;  
+}
+
+.request-availability-btn:hover {
+   background-color: #ffffff;
+   color: #2563eb;
+}
+
+.speaker-pg-content {
+  display: flexbox;
+  align-items:flex-start;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 4rem; /* Offset for fixed header */
+  padding: 2rem;
+}
+
+.sc-heading {
+  font-size: 1rem;
+  color: #1e3a8a;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .speaker-details {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .speaker-image {
+    margin-right: 0;
+    margin-bottom: 15px;
+  }
+
+  .speaker-name {
+    font-size: 1.5rem;
+  }
+
+  .speaker-description {
+    font-size: 1rem;
+  }
+}

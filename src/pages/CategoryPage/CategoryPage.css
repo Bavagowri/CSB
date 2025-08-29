@@ -1,0 +1,11 @@
+.category-page {
+  padding: 20px;
+  text-align: center;
+}
+
+.category-list {
+  display: flexbox;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}

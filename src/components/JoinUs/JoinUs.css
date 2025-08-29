@@ -1,0 +1,205 @@
+.join-us-container {
+    background-color: #ffffff;
+    /* padding: 60px 20px; Offset for fixed header */
+    /* min-height: calc(100vh - 60px); Ensure full height minus header */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-family: Georgia, serif;
+    padding-left: 20px;
+    /* padding-right: 20px; */
+}
+.join-us-col1 {
+    text-align: left;
+    width: 70%;
+    padding: 20px;
+    padding-left: 50px;
+    margin: 20px;
+}
+
+.join-us-col1 h1{
+    font-size: 2rem;
+    color: #dcb806;
+}
+
+.join-us-col1 p{
+    font-size: 1rem;
+    color: rgb(55, 55, 55);
+    line-height: 1.6;
+
+}
+.join-us-col2{
+    text-align: justify;
+    width: 30%;
+    padding: 20px; 
+}
+
+.join-us-col2 img {
+    width: 90%;
+}
+
+.join-us-form-container {
+    width: 100%;
+    max-width: 60%;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(149, 177, 233, 0.664);
+    padding: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    justify-content: left;
+    align-items: left;
+}
+
+/* .join-us-form-container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+} */
+
+.join-us-form-container form {
+  display: flex;
+  gap: 10px;
+  width: 100%;
+  flex-wrap: wrap;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.join-us-form-container form div {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.join-us-form-container form div label {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #ba9b03;
+
+}
+
+.join-us-form-container form div input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 80%%;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.fjoin-us-form-container form span {
+  color: red;
+  font-size: 0.8em;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+
+.join-us-form-container button {
+  padding: 10px 20px;
+  background-color: #001F3F;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  box-sizing: border-box;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  width: 40%;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #FFD717;
+}
+
+/* Horizontal layout */
+.horizontal-form {
+  flex-direction: row;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center; /* Center the items horizontally */
+}
+
+.horizontal-form div {
+  flex: 1;
+  min-width: 150px; /* Adjust as needed */
+}
+
+.horizontal-form div input,
+.horizontal-form div select,
+.horizontal-form div textarea,
+.horizontal-form button {
+  height: 40px; /* Same height for all fields and button */
+  width: 80%;
+}
+
+.horizontal-form div textarea {
+  height: 40px; /* Same as input height */
+  resize: none;
+  width: 400px;
+
+}
+
+.horizontal-form div:last-child {
+  flex: none;
+  width: auto;
+}
+
+
+
+/* Vertical layout */
+.vertical-form {
+  flex-direction: column;
+}
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  text-align: center;
+}
+
+.popup button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #ff9900;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.popup button:hover {
+  background-color: darkorange;
+}
+@media screen and (max-width: 960px) {
+  .horizontal-form {
+    flex-direction: column;
+  }
+  .horizontal-form div {
+    flex: 1;
+    min-width: 100%; /* Adjust as needed */
+  }
+  
+  .horizontal-form div input,
+  .horizontal-form div select,
+  .horizontal-form div textarea,
+  .horizontal-form button {
+    height: 40px; /* Same height for all fields and button */
+    width: 100%;
+  }
+  
+  .horizontal-form div textarea {
+    height: 40px; /* Same as input height */
+    resize: none;
+    width: 100%;
+  
+  }
+}

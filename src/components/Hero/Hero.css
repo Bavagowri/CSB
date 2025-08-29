@@ -1,0 +1,89 @@
+.hero {
+  /* background: linear-gradient(to right, #3b82f6, #7c3aed); */
+  background-image: url('../../assets//hero2.png');
+  background-size: cover; /* Ensures the image covers the entire section */
+  background-position: center; /* Centers the image */
+  background-repeat: no-repeat; /* Prevents the image from repeating */
+  color: #ffffff;
+  padding: 5rem 2rem;
+  text-align: center;
+  position: relative;
+  min-height: 610px; /* Ensure hero takes full height */
+}
+
+/* Optional: Add a semi-transparent overlay for better text readability */
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(4, 53, 75, 0.468); /* Adjust opacity (0.5) as needed */
+  z-index: 1;
+}
+
+.hero-container {
+  max-width: 1280px;
+  margin: 0 auto;
+  position: relative; /* Ensures content is above the overlay */
+  z-index: 2;
+  padding-top: 80px; /* Adjust to match header height */
+}
+
+.hero-title {
+  padding-top: 80px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  color: #f8d93d;
+
+}
+
+@media (min-width: 768px) {
+  .hero-title {
+    font-size: 3rem;
+  }
+}
+
+.hero-description {
+  font-size: 1.125rem;
+  margin-bottom: 3rem;
+  color: #d7e4ff;
+}
+
+.hero-button {
+  background-color: #ffffff;
+  color: #2563eb;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.hero-button:hover {
+  background-color: #2563eb;
+  color: #FFD717;
+}
+
+
+.hero-button2 {
+  background-color: #2563eb;
+  color: #ffffff;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  margin-left: 1rem;
+}
+
+.hero-button2:hover {
+   background-color: #ffffff;
+   color: #2563eb;
+}
