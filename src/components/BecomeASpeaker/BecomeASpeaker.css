@@ -1,11 +1,12 @@
 /* Common styles */
 .become-a-speaker-form-container {
   background-color: #fffdfa5e;
-  padding: 10px 0; /* Add padding to create space around the form */
-  position: relative; /* Create positioning context for the form */
-  overflow:visible;
+  padding: 10px 0;
+  position: relative;
+  overflow: visible;
   margin-bottom: 20px;
 }
+
 .bs-form-container {
   width: 100%;
   max-width: 90%;
@@ -13,25 +14,25 @@
   box-shadow: 0 4px 8px rgba(84, 39, 2, 0.664);
   border-radius: 4px;
   background-color: white;
-  /* margin: 20px 0; */
   position: relative;
-  overflow: hidden;
+  overflow: visible;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
   font-family: 'Kanit', sans-serif;
   justify-content: center;
   align-items: center;
   margin-left: 3%;
-  /* margin-right: 5%; */
 }
+
 .heading {
   justify-content: center;
   align-items: center;
   text-align: center;
 }
+
 .two-col {
-    display: flexbox;
-    /* flex-direction: column; */
+  display: flex;
 }
+
 .bs-form-container:hover {
   transform: translateY(-10px);
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -50,7 +51,6 @@
   flex-direction: column;
   flex: 1;
   font-family: 'Kanit', sans-serif;
-
 }
 
 .bs-form-container form div label {
@@ -63,17 +63,15 @@
   padding: 8px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  width: 80%%;
+  width: 80%;
   box-sizing: border-box;
   font-family: 'Kanit', sans-serif;
-
 }
 
 .bs-form-container form span {
   color: red;
   font-size: 0.8em;
   font-family: 'Kanit', sans-serif;
-
 }
 
 .bs-form-container button {
@@ -99,27 +97,26 @@ button:hover {
   flex-direction: row;
   align-items: flex-start;
   display: flex;
-  justify-content: center; /* Center the items horizontally */
+  justify-content: center;
 }
 
 .horizontal-form div {
   flex: 1;
-  min-width: 150px; /* Adjust as needed */
+  min-width: 150px;
 }
 
 .horizontal-form div input,
 .horizontal-form div select,
 .horizontal-form div textarea,
 .horizontal-form button {
-  height: 40px; /* Same height for all fields and button */
+  height: 40px;
   width: 80%;
 }
 
 .horizontal-form div textarea {
-  height: 40px; /* Same as input height */
+  height: 40px;
   resize: none;
   width: 400px;
-
 }
 
 .horizontal-form div:last-child {
@@ -127,12 +124,11 @@ button:hover {
   width: auto;
 }
 
-
-
 /* Vertical layout */
 .vertical-form {
   flex-direction: column;
 }
+
 .popup {
   position: fixed;
   top: 50%;
@@ -158,31 +154,152 @@ button:hover {
 .popup button:hover {
   background-color: darkorange;
 }
-@media screen and (max-width: 960px) {
-  .horizontal-form {
-    flex-direction: column;
-  }
-  .horizontal-form div {
-    flex: 1;
-    min-width: 100%; /* Adjust as needed */
-  }
-  
+
+.date-picker {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  font-family: 'Kanit', sans-serif;
+  color: #2c3e50;
+}
+
+/* Style the react-datepicker calendar popup as a square */
+.react-datepicker {
+  font-family: 'Kanit', sans-serif;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #2c3e50;
+  font-size: 1rem;
+  aspect-ratio: 1 / 1; /* Enforce square aspect ratio */
+  max-width: 300px; /* Set a reasonable square size */
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.react-datepicker__header {
+  background-color: #001F3F;
+  color: white;
+  border-bottom: 1px solid #ccc;
+  padding: 10px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  flex: 0 0 100%; /* Full width header */
+}
+
+.react-datepicker__month-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.react-datepicker__month {
+  flex: 1;
+  margin: 0;
+  padding: 0;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__week {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day {
+  width: 2.5rem;
+  line-height: 2.5rem;
+  margin: 0;
+  text-align: center;
+  color: #2c3e50;
+}
+
+.react-datepicker__day--selected,
+.react-datepicker__day--keyboard-selected {
+  background-color: #FFD717;
+  color: #001F3F;
+  border-radius: 50%;
+}
+
+.react-datepicker__time-container {
+  width: 100px; /* Fixed width for time column */
+  border-left: 1px solid #ccc;
+  padding: 10px;
+  flex-shrink: 0;
+}
+
+.react-datepicker__time-list {
+  padding: 0;
+  max-height: 200px; /* Limit height to fit square */
+  overflow-y: auto;
+}
+
+.react-datepicker__time-list-item {
+  font-size: 1rem;
+  color: #2c3e50;
+  height: 2rem;
+  line-height: 2rem;
+  text-align: left;
+}
+
+.react-datepicker__time-list-item--selected {
+  background-color: #FFD717;
+  color: #001F3F;
+}
+
+.react-datepicker__navigation {
+  top: 10px;
+}
+
+.react-datepicker__navigation-icon::before {
+  border-color: #fff;
+}
+
+/* Ensure the calendar popup is visible and not obscured */
+.react-datepicker-popper {
+  z-index: 100000;
+}
+
+@media screen and (max-width: 768px) {
   .horizontal-form div input,
   .horizontal-form div select,
   .horizontal-form div textarea,
   .horizontal-form button {
-    height: 40px; /* Same height for all fields and button */
     width: 100%;
   }
-  
+
   .horizontal-form div textarea {
-    height: 40px; /* Same as input height */
-    resize: none;
     width: 100%;
-  
+  }
+
+  .react-datepicker {
+    max-width: 250px; /* Smaller square on mobile */
+    font-size: 0.9rem;
+  }
+
+  .react-datepicker__day-name,
+  .react-datepicker__day {
+    width: 2rem;
+    line-height: 2rem;
+  }
+
+  .react-datepicker__time-container {
+    width: 80px;
+  }
+
+  .react-datepicker__time-list-item {
+    font-size: 0.9rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
   }
 }
-.bs-terms p{
+
+.bs-terms p {
   margin-top: 10px;
   text-align: center;
   justify-content: center;

@@ -8,6 +8,7 @@ const CustomProposal = ({ submitForm, layout }) => {
     lastName:'',
     organization: '',
     jobTitle:'',
+    orgLink:'',
     telephone:'',
     email: '',
     interest:'',
@@ -33,6 +34,7 @@ const CustomProposal = ({ submitForm, layout }) => {
     if (!formData.firstName) tempErrors.firstName = 'First Name is required';
     if (!formData.lastName) tempErrors.lastName = 'Last Name is required';
     if (!formData.organization) tempErrors.organization = 'Organization is required';
+    if (!formData.organization) tempErrors.organization = 'Organization website link is required';
     if (!formData.telephone) tempErrors.telephone = 'Telephone number is required';
     if (!formData.email) tempErrors.email = 'Email is required';
     if (!formData.interest) tempErrors.interest = 'Speakers or Topics of Interest is required';
@@ -54,6 +56,7 @@ const CustomProposal = ({ submitForm, layout }) => {
             lastName:'',
             organization: '',
             jobTitle:'',
+            orgLink:'',
             telephone:'',
             email: '',
             interest:'',
@@ -105,6 +108,12 @@ const CustomProposal = ({ submitForm, layout }) => {
             </div>
 
             <div>
+                <label>Organization Website Link</label>
+                <input type="text" name="orgLink" value={formData.orgLink} onChange={handleChange} />
+                {errors.orgLink && <span>{errors.orgLink}</span>}
+            </div>
+
+            <div>
                 <label>Telephone</label>
                 <input type="text" name="telephone" value={formData.telephone} onChange={handleChange} />
                 {errors.telephone && <span>{errors.telephone}</span>}
@@ -117,7 +126,7 @@ const CustomProposal = ({ submitForm, layout }) => {
             </div>
             
             <div>
-                <label>Speakers or Topics of Interest</label>
+                <label>Topics of Interest</label>
                 <textarea name="interest" value={formData.interest} onChange={handleChange}></textarea>
                 {errors.interest && <span>{errors.interest}</span>}
             </div>
