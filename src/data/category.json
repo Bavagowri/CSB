@@ -2,7 +2,7 @@
   {
     "name": "Technology",
     "description": "Speakers specializing in AI, blockchain, cybersecurity, and emerging tech trends.",
-    "imageUrl":"../src/assets/category-img/tech.png",
+    "imageUrl":"/assets/category-img/tech.png",
     "subcategories": [
       {
         "name": "Artificial Intelligence",
@@ -18,7 +18,7 @@
   {
     "name": "Motivational",
     "description": "Inspirational speakers focusing on leadership, personal development, and team building.",
-    "imageUrl":"../src/assets/category-img/motivation.png",
+    "imageUrl":"/assets/category-img/motivation.png",
     "subcategories": [
       {
         "name": "Leadership",
@@ -34,49 +34,49 @@
   {
     "name": "Environment",
     "description": "Experts in sustainability, climate change, and environmental innovation.",
-    "imageUrl":"../src/assets/category-img/env.png",
+    "imageUrl":"/assets/category-img/env.png",
     "subcategories": []
   },
   
   {
     "name": "Energy",
     "description": "Experts in sustainability, climate change, and environmental innovation.",
-    "imageUrl":"../src/assets/category-img/tech.png",
+    "imageUrl":"/assets/category-img/tech.png",
     "subcategories": []
   },
 
   {
     "name": "Women Speakers",
     "description": "It’s a powerful moment in time for women – rising up and banding together to boldly face adversity. These powerhouse motivational women speakers lay bare their struggles, reveal their secrets to success, and share their next big ideas to inspire and embolden the next generation of leaders. Whether she’s claimed the corner office or sparked the next chapter in innovation, the women in this group are united by their fierce visions for change. Available for in-person or virtual events and meetings",
-    "imageUrl":"../src/assets/category-img/women.png",
+    "imageUrl":"/assets/category-img/women.png",
     "subcategories": []
   },
 
   {
     "name": "Fiscal Policy Speakers",
     "description": "No matter the nation, every government has a huge impact on economic policy. But how should governments adjust their fiscal policies to improve economic performance? WSB’s fiscal policy speakers give you an inside scoop on what it takes to compose fiscal policies that protect the interests of the people. Available for in-person or virtual events and meetings.",
-    "imageUrl":"../src/assets/category-img/fiscal.png",
+    "imageUrl":"/assets/category-img/fiscal.png",
     "subcategories": []
   },
 
   {
     "name": "Corporate Strategy",
     "description": "",
-    "imageUrl":"../src/assets/category-img/corporate.png",
+    "imageUrl":"/assets/category-img/corporate.png",
     "subcategories": []
   },
 
   {
     "name": "Emerging Voices",
     "description": "",
-    "imageUrl":"../src/assets/category-img/emerging.png",
+    "imageUrl":"/assets/category-img/emerging.png",
     "subcategories": []
   },
 
   {
     "name": "Regional",
     "description": "Inspirational speakers focusing on leadership, personal development, and team building.",
-    "imageUrl":"../src/assets/category-img/regional.png",
+    "imageUrl":"/assets/category-img/regional.png",
     "subcategories": [
       {
         "name": "EMA",
@@ -104,7 +104,7 @@
   {
     "name": "Geo Political Speakers",
     "description": "Inspirational speakers focusing on leadership, personal development, and team building.",
-    "imageUrl":"../src/assets/category-img/geo-political.png",
+    "imageUrl":"/assets/category-img/geo-political.png",
     "subcategories": [
       {
         "name": "Asia Speakers",

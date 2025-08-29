@@ -6,7 +6,7 @@
     "description": "Expert in artificial intelligence with over 20 years of experience in machine learning.",
     "category": "Technology",
     "subcategory": "Artificial Intelligence",
-    "imageUrl":"../src/assets/speakers/1.png"
+    "imageUrl":"/assets/speakers/1.png"
   },
 
   {
@@ -16,7 +16,7 @@
     "description": "Renowned motivational speaker focusing on leadership and personal growth.",
     "category": "Motivational",
     "subcategory": "Leadership",
-   "imageUrl":"../src/assets/speakers/2.png"
+   "imageUrl":"assets/speakers/2.png"
   },
 
   {
@@ -26,6 +26,6 @@
     "description": "Sustainability advocate with expertise in renewable energy solutions.",
     "category": "Environment",
     "subcategory": null,
-    "imageUrl":"../src/assets/speakers/3.png"
+    "imageUrl":"assets/speakers/3.png"
   }
 ]
